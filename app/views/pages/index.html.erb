@@ -1,0 +1,14 @@
+<div id='app'>
+  <div>
+    <h2>To-dos</h2>
+  </div>
+  <ol>
+    <li v-for="task in tasks" v-on:click="completeTask(task)">
+      {{task}}
+    </li>
+  </ol>
+  <div>
+    <input type="text" v-model='newTask'>
+    <button v-on:click="addTask()">Add Task</button>
+  </div>
+</div>
